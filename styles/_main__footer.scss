@@ -1,0 +1,25 @@
+.main__footer {
+
+    .main__footer__title {
+        margin-top: 70px;
+        margin-bottom: 20px;
+    }
+
+
+
+    .main__footer__cards__top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main__footer__cards__bot {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .main__footer__catalog{
+        display: flex;
+        margin-top: 3%;
+    }
+}
