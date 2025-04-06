@@ -202,22 +202,46 @@ h2 {
 }
 .main__header .main__card__container {
   font-size: 60px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 15px;
+  grid-template-areas: "first first first second second second" "third third fourth fourth fifth fifth";
 }
-.main__header .main__card__container .main__card__container__top .main__card__a {
+.main__header .main__card__container .main__card {
   position: relative;
 }
-.main__header .main__card__container .main__card__container__top .main__card__a .main__card__a__p {
-  position: absolute;
-  inset: 0;
-  color: var(--white-text);
+.main__header .main__card__container .main__card .main__card__img {
+  width: 100%;
+  z-index: 50;
 }
-.main__header .main__card__container .main__card__container__bot .main__card__b {
-  position: relative;
-}
-.main__header .main__card__container .main__card__container__bot .main__card__b .main__card__b__p {
+.main__header .main__card__container .main__card .main__card__description {
   position: absolute;
-  inset: 0;
+  z-index: 100;
+  top: 43%;
+  right: 35%;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 41px;
   color: var(--white-text);
+  text-decoration: none;
+}
+.main__header .main__card__container #first {
+  grid-area: first;
+}
+.main__header .main__card__container #second {
+  grid-area: second;
+}
+.main__header .main__card__container #third {
+  grid-area: third;
+}
+.main__header .main__card__container #fourth {
+  grid-area: fourth;
+}
+.main__header .main__card__container #fifth {
+  grid-area: fifth;
 }
 
 .main__middle .main__middle__title {
